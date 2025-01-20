@@ -4,11 +4,13 @@
   "description": "ukol_lekce2",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+
     "author": "Milan Šubert",
     "email": "msubert@gmail.com",
     "preinstall": "echo 'jdu instalovat'",
-    "postInstall": "echo 'nainstalováno'"
+    "postInstall": "echo 'nainstalováno'",
+    "test": "echo 'OK'",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -24,5 +26,8 @@
   "dependencies": {
     "eslint": "^9.0.0",
     "husky-init": "^8.0.0"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7"
   }
 }
