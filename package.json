@@ -1,0 +1,19 @@
+{
+  "name": "hw_ukol_lekce2",
+  "version": "1.0.0",
+  "description": "ukol_lekce2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MilanSubert-prog/hw_ukol_lekce2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MilanSubert-prog/hw_ukol_lekce2/issues"
+  },
+  "homepage": "https://github.com/MilanSubert-prog/hw_ukol_lekce2#readme"
+}
