@@ -1,1 +1,1 @@
-console.log('Ahoj, dnes je '+ new Date().toLocaleDateString()+'. \nPřeji hezký den!');
+console.log('Ahoj, dnes je '+ new Date().toLocaleDateString()+'. \nPřeji hezký den.');
