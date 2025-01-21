@@ -4,8 +4,6 @@
   "description": "ukol_lekce2",
   "main": "index.js",
   "scripts": {
-    "author": "Milan Šubert",
-    "email": "msubert@gmail.com",
     "preinstall": "echo 'jdu instalovat'",
     "postInstall": "echo 'nainstalováno'",
     "prepare": "husky",
@@ -15,7 +13,9 @@
     "type": "git",
     "url": "git+https://github.com/MilanSubert-prog/hw_ukol_lekce2.git"
   },
-  "author": "",
+
+  "author": "Milan Šubert",
+  "email": "msubert@gmail.com",
   "license": "ISC",
   "bugs": {
     "email": "msubert@gmail.com",
