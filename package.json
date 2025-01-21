@@ -9,7 +9,8 @@
     "preinstall": "echo 'jdu instalovat'",
     "postInstall": "echo 'nainstalováno'",
     "test": "echo 'OK'",
-    "prepare": "husky"
+    "prepare": "husky",
+    "lint": "eslint"
   },
   "repository": {
     "type": "git",
@@ -23,11 +24,15 @@
   },
   "homepage": "https://github.com/MilanSubert-prog/hw_ukol_lekce2#readme",
   "dependencies": {
-    "eslint": "^9.0.0",
     "git": "^0.1.5",
     "husky-init": "^8.0.0"
   },
   "devDependencies": {
-    "husky": "^9.1.7"
+    "@eslint/js": "^9.18.0",
+    "eslint": "^9.18.0",
+    "eslint-plugin-react": "^7.37.4",
+    "globals": "^15.14.0",
+    "husky": "^9.1.7",
+    "typescript-eslint": "^8.21.0"
   }
 }
