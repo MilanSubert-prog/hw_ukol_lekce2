@@ -1,7 +1,7 @@
 {
   "name": "hw_ukol_lekce2",
   "version": "1.0.0",
-  "description": "ukol_lekce2",
+  "description": "ukol_lekce2, toto je nová verze",
   "main": "index.js",
   "scripts": {
     "preinstall": "echo 'jdu instalovat'",
@@ -13,7 +13,6 @@
     "type": "git",
     "url": "git+https://github.com/MilanSubert-prog/hw_ukol_lekce2.git"
   },
-
   "author": "Milan Šubert",
   "email": "msubert@gmail.com",
   "license": "ISC",
@@ -23,8 +22,8 @@
   },
   "homepage": "https://github.com/MilanSubert-prog/hw_ukol_lekce2#readme",
   "devDependencies": {
-    "@eslint/js": "^9.18.0",
-    "eslint": "^9.18.0",
+    "@eslint/js": "^9.19.0",
+    "eslint": "^9.19.0",
     "eslint-plugin-react": "^7.37.4",
     "globals": "^15.14.0",
     "husky": "^9.1.7",
