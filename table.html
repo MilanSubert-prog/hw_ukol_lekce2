@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Úkol k lekci 3</title>
+    <link rel="stylesheet" href="styly.css">
+</head>
+<body>
+
+<div>
+    <form>
+        <h2>Vložte prosím vstup pro formulář:</h2>
+        <label for="first_name">Jméno: </label>
+        <input type="text" minlength="1" maxlength="30" name="first_name" id="first_name" required>
+
+        <label for="last_name">Příjmení: </label>
+        <input type="text" minlength="1" maxlength="30" name="last_name" id="last_name" required>
+
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Telefon: </label>
+        <input type="tel" name="phone" id="phone" required><br><br>
+    </form>
+    <button type="button" onclick="addRow()">Přidej řádek</button>
+
+</div>
+
+
+<div>
+ <table>
+     <caption><h1>Moje záznamy z formuláře:</h1></caption>
+     <thead>
+     <tr>
+        <th>jméno</th>
+        <th>příjmení</th>
+        <th>email</th>
+        <th>telefon</th>
+     </tr>
+     </thead>
+
+     <tbody id="data">
+         <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+         </tr>
+         </tbody>
+
+ </table>
+</div>
+
+<div>
+    <p><small>Popis: Praktické cvičení - Lekce 4</small></p>
+</div>
+
+
+<script>
+    var addRow = () => {
+    const table = document.getElementById("data");
+    const newRow = table.insertRow(-1);
+    ["phone", "email", "last_name", "first_name"].forEach((fieldName) => {
+        const newValue = document.getElementById(fieldName).value;
+        const newCell = newRow.insertCell(0);
+        let newText = document.createTextNode(newValue);
+        newCell.appendChild(newText);
+        });
+    };
+</script>
+
+
+
+</body>
+</html>

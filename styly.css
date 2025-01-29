@@ -1,0 +1,31 @@
+body {
+    background-color: lightblue;
+}
+
+form {
+    font-family: Arial;
+}
+
+table {
+    border: black;
+    border-style: revert;
+    width: 500px;
+    font-family: Arial;
+}
+
+td {
+
+    width: 160px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+h2 {
+    color: rebeccapurple;
+    font-family: Arial;
+}
+
+h1 {
+
+    font-family: Arial;
+}
