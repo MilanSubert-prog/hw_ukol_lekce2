@@ -7,16 +7,19 @@ form {
 }
 
 table {
-    border: black;
-    border-style: revert;
+
     width: 500px;
     font-family: Arial;
 }
 
 thead th, tfoot th{
     font-weight: bold;
-    border: solid #000000;
+);
     background-color: ghostwhite; !important;
+}
+
+thead th, tfoot th{
+    border: 1px solid #000000;
 }
 
 table tr:nth-child(odd) {
@@ -29,11 +32,11 @@ table tr:nth-child(even) {
     color: black;
 }
 
-table tr:hover:nth-child(odd) {
+table tr:hover {
     background-color: red;
 }
 
-table tr:hover:nth-child(even) {
+table tr:hover {
     background-color: red;
 }
 
