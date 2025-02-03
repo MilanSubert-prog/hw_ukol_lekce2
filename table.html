@@ -7,24 +7,41 @@
 </head>
 <body>
 
-<div>
+
+
     <form>
+
         <h2>Vložte prosím vstup pro formulář:</h2>
+
+        <div class="container">
+    <div>
         <label for="first_name">Jméno: </label>
         <input type="text" minlength="1" maxlength="30" name="first_name" id="first_name" required>
-
+    </div>
+    <div>
         <label for="last_name">Příjmení: </label>
         <input type="text" minlength="1" maxlength="30" name="last_name" id="last_name" required>
+    </div>
 
+    <div class="email">
         <label for="email">Email: </label>
         <input type="email" id="email" name="email" required>
+    </div>
 
+    <div>
         <label for="phone">Telefon: </label>
-        <input type="tel" name="phone" id="phone" required><br><br>
+        <input type="tel" name="phone" id="phone" required>
+    </div>
+
+        <div>
+            <button type="button" onclick="addRow()">Přidej řádek</button>
+        </div>
+
+        </div>
     </form>
-    <button type="button" onclick="addRow()">Přidej řádek</button>
 
 </div>
+
 
 
 <div>
@@ -39,6 +56,15 @@
      </tr>
      </thead>
 
+     <tfoot>
+     <tr>
+         <th>patička jména</th>
+         <th>patička příjmení</th>
+         <th>patička email</th>
+         <th>patička telefon</th>
+     </tr>
+     </tfoot>
+
      <tbody id="data">
          <tr>
             <td></td>
@@ -52,7 +78,7 @@
 </div>
 
 <div>
-    <p><small>Popis: Praktické cvičení - Lekce 4</small></p>
+    <p><small>Popis: Praktické cvičení - Lekce 5</small></p>
 </div>
 
 

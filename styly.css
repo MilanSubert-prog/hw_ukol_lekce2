@@ -7,14 +7,40 @@ form {
 }
 
 table {
-    border: black;
-    border-style: revert;
+
     width: 500px;
     font-family: Arial;
 }
 
-td {
+thead th, tfoot th{
+    font-weight: bold;
+);
+    background-color: ghostwhite; !important;
+}
 
+thead th, tfoot th{
+    border: 1px solid #000000;
+}
+
+table tr:nth-child(odd) {
+    background-color: lightblue;
+    /*color: black; */
+}
+
+table tr:nth-child(even) {
+    background-color: ghostwhite;
+    color: black;
+}
+
+table tr:hover {
+    background-color: red;
+}
+
+table tr:hover {
+    background-color: red;
+}
+
+td {
     width: 160px;
     text-align: center;
     vertical-align: middle;
@@ -28,4 +54,37 @@ h2 {
 h1 {
 
     font-family: Arial;
+}
+
+.container {
+    display: grid;
+    }
+
+@media screen and (min-width: 800px) {
+    .container {
+        background-color: yellow;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+}
+
+@media screen and (max-width: 799px) and (min-width: 500px) {
+    .container {
+        background-color: olive;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 2fr;
+    }
+    .email {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .container {
+        background-color: blue;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5fr;
+    }
 }
