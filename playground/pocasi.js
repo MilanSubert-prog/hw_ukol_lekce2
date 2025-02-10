@@ -5,7 +5,6 @@ const print = (message) => {document.getElementById("output").value += `${typeof
 const getCityCoords = async (cityName) => {
     try
     {
-
         const response = await fetch(`https://geocoding-api.open-meteo.com/v1/search?name=${cityName}&count=1&language=en&format=json`);
 
     if(!response.ok) {
@@ -48,22 +47,31 @@ const getForecast = async ({ latitude, longitude }) => {
     }
 };
 
-
 ///////// proklik vyhledávání
-
 window.document.getElementById("pocasi").addEventListener("click", async() => {
 
     // promažu output
     document.getElementById("output").value = "";
 
     const poleMesto = [];
-    poleMesto.push(document.getElementById("mesto").value.split(','));
-    // console.log(poleMesto);
 
+    const splits = document.getElementById("mesto").value.split(/[;,]/);
 
-    const cityCoords = await getCityCoords(mesto);
-    await getForecast(cityCoords);
+    for (let i = 0; i < splits.length; i++) {
+        poleMesto.push(splits[i]);
+    }
 
-   // print(cityCoords);
+    const souradnice = [];
+
+    const allCoordinates = await Promise.all([getCityCoords(poleMesto[0]), getCityCoords(poleMesto[1]), getCityCoords(poleMesto[2])]).then((values) => souradnice.push(values));
+    const allForecasts = await Promise.allSettled([getForecast(souradnice[0]), getForecast(souradnice[1]), getForecast(souradnice[2])]);
 
 })
+
+window.document.getElementById("doplnTestMesta").addEventListener("click", async() => {
+    document.getElementById("mesto").value = "Brno;Prague;Pardubice";
+});
+
+window.document.getElementById("vymazOutput").addEventListener("click", async() => {
+    document.getElementById("output").value = "";
+});
