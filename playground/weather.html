@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+  <link rel="stylesheet" href="../styly.css">
+</head>
+<body>
+
+
+<form>
+
+  <h2>Vložte prosím vstup pro formulář:</h2>
+
+  <div class="container">
+    <div>
+      <label for="mesto">Město: </label>
+      <input type="text" minlength="1" maxlength="30" name="mesto" id="mesto" required>
+    </div>
+
+    <div>
+      <button type="button" id="pocasi" onclick="">Zjisti počasí</button>
+      <button type="button" id="doplnTestMesta" onclick="">Testovací města</button>
+      <button type="button" id="vymazOutput" onclick="">Vymaž output</button>
+    </div>
+
+    <script src="./pocasi.js"></script>
+
+  </div>
+</form>
+
+<div>
+  <label for="output">Output: </label>
+  <textarea id="output" name="output" rows="4" cols="50"></textarea>
+</div>
+
+
+</body>
+</html>
